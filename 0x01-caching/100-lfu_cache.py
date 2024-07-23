@@ -18,7 +18,7 @@ class LFUCache(BaseCaching):
         self.keys_freq = []
 
     def __reorder_items(self, mru_key):
-        """__reorder items
+        """reorder items
         """
         max_positions = []
         mru_freq = 0
@@ -42,7 +42,7 @@ class LFUCache(BaseCaching):
         self.keys_freq.insert(ins_pos, [mru_key, mru_freq])
 
     def put(self, key, item):
-        """Adds an item in the cache.
+        """put
         """
         if key is None or item is None:
             return
