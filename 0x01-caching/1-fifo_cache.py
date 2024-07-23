@@ -1,4 +1,3 @@
-
 #!/usr/bin/env python3
 """First-In First-Out caching module.
 """
