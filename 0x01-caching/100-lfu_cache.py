@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Least Frequently Used caching module.
+"""caching module.
 """
 from collections import OrderedDict
 
@@ -11,7 +11,7 @@ class LFUCache(BaseCaching):
     """
 
     def __init__(self):
-        """Initializes the cache.
+        """Initialize
         """
         super().__init__()
         self.cache_data = OrderedDict()
