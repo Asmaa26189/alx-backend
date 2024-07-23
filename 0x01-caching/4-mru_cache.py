@@ -31,7 +31,7 @@ class MRUCache(BaseCaching):
             self.cache_data[key] = item
 
     def get(self, key):
-        """Retrieves an item by key.
+        """get
         """
         if key is not None and key in self.cache_data:
             self.cache_data.move_to_end(key, last=False)
