@@ -64,7 +64,7 @@ class LFUCache(BaseCaching):
             self.__reorder_items(key)
 
     def get(self, key):
-        """Retrieves an item by key.
+        """get
         """
         if key is not None and key in self.cache_data:
             self.__reorder_items(key)
