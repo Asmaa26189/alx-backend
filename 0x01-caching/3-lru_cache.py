@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Least Recently Used caching module.
+"""LRUCache
 """
 from collections import OrderedDict
 
@@ -7,18 +7,17 @@ from base_caching import BaseCaching
 
 
 class LRUCache(BaseCaching):
-    """Represents an object that allows storing and
-    retrieving items from a dictionary with a LRU
-    removal mechanism when the limit is reached.
+    """LRUCache
     """
+
     def __init__(self):
-        """Initializes the cache.
+        """Initializes
         """
         super().__init__()
         self.cache_data = OrderedDict()
 
     def put(self, key, item):
-        """Adds an item in the cache.
+        """puts
         """
         if key is None or item is None:
             return
@@ -32,7 +31,7 @@ class LRUCache(BaseCaching):
             self.cache_data[key] = item
 
     def get(self, key):
-        """Retrieves an item by key.
+        """get
         """
         if key is not None and key in self.cache_data:
             self.cache_data.move_to_end(key, last=False)
