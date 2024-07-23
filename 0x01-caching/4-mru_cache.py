@@ -11,13 +11,13 @@ class MRUCache(BaseCaching):
     """
 
     def __init__(self):
-        """Initializes the cache.
+        """Initialize
         """
         super().__init__()
         self.cache_data = OrderedDict()
 
     def put(self, key, item):
-        """Adds an item in the cache.
+        """put
         """
         if key is None or item is None:
             return
