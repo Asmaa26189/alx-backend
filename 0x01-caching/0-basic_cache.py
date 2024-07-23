@@ -19,4 +19,3 @@ class BasicCache(BaseCaching):
         """Retrieves an item by key.
         """
         return self.cache_data.get(key, None)
-        
