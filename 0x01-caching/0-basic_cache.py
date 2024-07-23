@@ -5,7 +5,8 @@ from base_caching import BaseCaching
 
 
 class BasicCache(BaseCaching):
-    """BasicCache
+    """Represents an object that allows storing and
+        retrieving items from a dictionary.
     """
     def put(self, key, item):
         """set
